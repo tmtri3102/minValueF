@@ -4,6 +4,9 @@ let arr3 = [];
 let arr4 = [0, 0, 0, 0, 0, 0];
 function findMin(array) {
 	let min = array[0];
+	if (array.length == 0) {
+		return -1;
+	}
 	for (let i = 1; i < array.length; i++) {
 		if (array[i] < min) {
 			min = array[i];
